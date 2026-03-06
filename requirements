@@ -1,0 +1,8 @@
+streamlit
+numpy
+sentence-transformers
+rank-bm25
+pypdf
+faiss-cpu==1.7.4
+langchain
+langchain-community
