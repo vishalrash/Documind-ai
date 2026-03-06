@@ -43,7 +43,7 @@ def search(question, top_k=3):
     distances, indices = index.search(query_embedding, top_k)
 
     results = []
-    threshold = 1.5   # relevance threshold
+    threshold = 5      # relevance threshold
 
     for i in range(top_k):
 

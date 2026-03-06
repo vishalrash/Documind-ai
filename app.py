@@ -273,14 +273,7 @@ if question:
                 else:
                     confidence = "low"
 
-                if best_score < 0.3:
-
-                    answer = "I could not find this in the provided documents. Can you share the relevant document?"
-
-                    st.error(answer)
-
-                else:
-
+                
                     context = "\n".join(top_chunks)
 
                     answer = generate_llm_answer(context, question)
